@@ -1,0 +1,31 @@
+# INNOTECH SOLUTIONS
+
+## Informations Générales
+- Nom de l'entreprise : InnoTech Solutions.
+- Horaires d'ouverture des locaux : De 07h30 à 19h30, du lundi au vendredi.
+- Adresse : 14 Avenue de l'Innovation, 75000 Paris.
+- Code vestimentaire : Décontracté, costume non obligatoire sauf pour les rendez-vous clients.
+
+## Transports et Accès
+- Le parking souterrain est réservé aux employés ayant plus d'un an d'ancienneté. Un parking à vélos sécurisé est disponible au sous-sol (-1).
+- Transports en commun : L'arrêt de bus le plus proche est "Avenue de l'Innovation" (Ligne 42 et Ligne 64). La station de métro est "Gare Centrale" (Ligne 4). 
+
+## 3. Restauration (La Cantine)
+- Localisation : Au rez-de-chaussée, bâtiment B.
+- Horaires d'ouverture : 11h45 à 13h45.
+- Paiement : Avec le badge employé. Il est possible de recharger le badge sur l'intranet ou sur les bornes à l'entrée. Une subvention de 50% est prise en charge par l'entreprise sur chaque repas.
+- Des machines à café gratuites sont disponibles à chaque étage près des ascenseurs.
+
+## Outils Informatiques et IT
+- Réseau Wi-Fi : Utiliser le réseau "InnoTech_Secure". Le mot de passe est généré individuellement sur le portail IT.
+- Accès à distance (Télétravail) : Le télétravail est autorisé 2 jours par semaine. Pour se connecter de chez soi, il faut lancer le logiciel "Cisco AnyConnect VPN" et utiliser son identifiant Microsoft 365.
+- Problème informatique : Ne pas appeler directement le service IT. Il faut créer un ticket sur le portail interne "HelpDesk InnoTech" accessible depuis le navigateur.
+
+## Congés et Absences
+- Congés payés : Chaque employé cumule 2,08 jours de congés par mois (soit 25 jours par an).
+- Maladie : En cas d'arrêt maladie, vous devez prévenir votre manager par email avant 09h30 et envoyer votre arrêt de travail à l'adresse rh@innotech.fr sous 48 heures.
+
+##. Éthique, Sécurité et Bien-être
+- Charte de bonne conduite : Le respect et la bienveillance sont primordiaux. Le harcèlement sous toutes ses formes est strictement interdit.
+- Mal-être au travail ou problèmes personnels : Si vous vous sentez dépassé, stressé, ou en situation de mal-être, n'hésitez pas. Une cellule d'écoute psychologique anonyme et gratuite est disponible 24h/24 au 0800 123 456. Vous pouvez aussi contacter directement la directrice des Ressources Humaines, Mme Dupont.
+- Sécurité incendie : Le point de rassemblement en cas d'alarme est situé sur le parking visiteur, près de la fontaine.
