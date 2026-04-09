@@ -1,4 +1,5 @@
-# Rapport de Projet : [Nom]
+# Rapport de Projet : Eliza
+
 
 **Auteurs :** Kamil AKERRAMAMOU, Laurent COSTA, Mathieu JIN
 
@@ -8,7 +9,9 @@
 
 ## Objectif du projet
 
-Le projet [Nom] est un chatbot pour faciliter l'intégration des nouveaux employée et fluidifier les échanges entre les employés et les services RH et informatiques. [Nom] est connectée en temps réel aux données de l'entreprise ainsi qu'aux services locaux (horaires de transports, restauration), il centralise l'information pour simplifier et améliorer la qualité de vie au travail.
+Le projet Eliza
+ est un chatbot pour faciliter l'intégration des nouveaux employée et fluidifier les échanges entre les employés et les services RH et informatiques. Eliza
+ est connectée en temps réel aux données de l'entreprise ainsi qu'aux services locaux (horaires de transports, restauration), il centralise l'information pour simplifier et améliorer la qualité de vie au travail.
 
 
 ## Cibles et Besoin
@@ -38,7 +41,8 @@ Le projet [Nom] est un chatbot pour faciliter l'intégration des nouveaux employ
 
 ## Modèle Économique
 ### Retour sur Investissement (ROI)
-L'intégration de [Nom] crée de la valeur à plusieurs niveaux :
+L'intégration de Eliza
+ crée de la valeur à plusieurs niveaux :
 
 1. **Gain financier :** En automatisant la résolution des requêtes récurrentes , le chatbot réduit drastiquement le volume de tickets d'assistance. Ce filtrage permet de libérer un temps précieux aux experts RH et IT, qui peuvent alors se concentrer sur des tâches importantes. Le coût humain du support interne est ainsi considérablement optimisé.
 2. **Gain de temps :** Grâce à un accès instantané et autonome à l'information, les nouvelles recrues ne restent plus bloquées dans l'attente d'une réponse de leur manager ou du support. Cette fluidité accélère leur montée en compétences, leur permettant d'être pleinement opérationnelles et productives beaucoup plus rapidement.
