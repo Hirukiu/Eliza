@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="InnoBot — assistant conversationnel interne pour les équipes InnoTech Solutions." />
+  <title>InnoBot  InnoTech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- En-tête : logo, navigation principale et accès rapide au bot -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#accueil">Inno<span>Bot</span></a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#impact">Impact</a>
+        <a href="#ethique">Éthique</a>
+        <a class="btn btn--small" href="#discord">Accéder au bot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <!-- Hero : promesse produit + aperçu conversation Discord -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="eyebrow">InnoTech Solutions</p>
+          <h1>Vos réponses internes, sans chercher pendant des heures.</h1>
+          <p class="lead">
+            <strong>InnoBot</strong> est l'assistant qui répond aux questions sur les locaux, la cantine,
+            l'IT, les congés et le bien-être — directement depuis Discord, à partir de la base documentaire officielle.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="#discord">Discuter avec InnoBot</a>
+            <a class="btn btn--ghost" href="#demo">Voir la démo</a>
+          </div>
+        </div>
+        <div class="mock-chat" aria-hidden="true">
+            <div class="mock-chat__bar"># onboarding-innotech</div>
+            <div class="mock-chat__msg mock-chat__msg--user">Comment je déclare un arrêt maladie ?</div>
+            <div class="mock-chat__msg mock-chat__msg--bot">
+              Préviens ton manager par email avant 9h30, puis envoie ton arrêt à rh@innotech.fr sous 48 h.
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Positionnement éditorial et ton utilisé par InnoBot -->
+    <section class="section" id="identite">
+      <div class="container">
+        <h2>Identité</h2>
+        <p class="section__intro">
+          InnoBot adopte un ton <strong>clair, bienveillant et factuel</strong> : pas de jargon inutile,
+          des réponses alignées sur les règles internes d'InnoTech Solutions. L'objectif est de rassurer
+          et d'orienter vers les bons contacts (RH, IT, HelpDesk) quand la situation l'exige.
+        </p>
+      </div>
+    </section>
+
+    <!-- Bloc démonstration : emplacement pour vidéo/capture de présentation -->
+    <section class="section section--alt" id="demo">
+      <div class="container">
+        <h2>Démo &amp; usage</h2>
+        <p class="section__intro">
+          Les collaborateurs posent leurs questions sur le canal Discord dédié. Le bot combine la
+          <strong>base de connaissances</strong>
+          pour formuler une réponse adaptée
+        </p>
+        <div class="demo-placeholder">
+          <p><strong>Vidéo ou capture d'écran de démo</strong> — intégrez ici l'embed ou le fichier fourni par l'équipe (keynote).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Liste des cas d'usage principaux couverts par le bot -->
+    <section class="section" id="fonctionnalites">
+      <div class="container">
+        <h2>Fonctionnalités &amp; cas d'usage</h2>
+        <ul class="feature-grid">
+          <li>
+            <h3>Infos générales</h3>
+            <p>Horaires des locaux, adresse, code vestimentaire pour les rendez-vous clients.</p>
+          </li>
+          <li>
+            <h3>Accès &amp; déplacements</h3>
+            <p>Parking, vélos, bus, métro — pour faciliter le premier jour et les trajets.</p>
+          </li>
+          <li>
+            <h3>Cantine &amp; locaux</h3>
+            <p>Horaires, paiement au badge, subvention repas, cafés.</p>
+          </li>
+          <li>
+            <h3>IT &amp; télétravail</h3>
+            <p>Wi-Fi, VPN, télétravail, création de tickets HelpDesk (sans contourner le process).</p>
+          </li>
+          <li>
+            <h3>Congés &amp; absences</h3>
+            <p>Rappel des règles sur les CP et les arrêts maladie.</p>
+          </li>
+          <li>
+            <h3>Bien-être &amp; sécurité</h3>
+            <p>Charte, cellule d'écoute, point de rassemblement incendie.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Indicateurs de valeur attendue pour l'entreprise -->
+    <section class="section section--alt" id="impact">
+      <div class="container">
+        <h2>Valeur pour l'entreprise</h2>
+        <p class="section__intro">
+          Moins de sollicitations répétées vers les RH et l'IT, des collaborateurs autonomes plus vite après l'onboarding.
+        </p>
+        <div class="kpi-grid">
+          <div class="kpi">
+            <strong>-30 %</strong>
+            <span>temps estimé passé par les nouveaux à chercher l'info (cible onboarding)</span>
+          </div>
+          <div class="kpi">
+            <strong>&lt; 2 min</strong>
+            <span>délai moyen visé pour une première réponse sur une question standard</span>
+          </div>
+          <div class="kpi">
+            <strong>ROI</strong>
+            <span>réduction du coût opportunité managers/RH (à affiner avec des mesures terrain en démo)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principes de transparence, données et responsabilité -->
+    <section class="section" id="ethique">
+      <div class="container">
+        <h2>Éthique &amp; responsabilité</h2>
+        <ul class="ethics-list">
+          <li><strong>Transparence</strong> : le bot s'appuie sur une base documentaire interne ; les limites sont communiquées (pas de conseil médical ou juridique).</li>
+          <li><strong>Données</strong> : pas de stockage inutile des conversations au-delà du nécessaire au fonctionnement du prototype.</li>
+          <li><strong>Biais &amp; erreurs</strong> : vérification des sources ; en cas de doute, orientation vers un humain (RH, IT).</li>
+          <li><strong>Effet ELIZA</strong> : rappel que l'outil n'est pas un interlocuteur humain — éviter la dépendance affective au canal.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Appel à l'action final vers l'accès Discord -->
+    <section class="section cta-block" id="discord">
+      <div class="container">
+        <h2>Accéder à InnoBot</h2>
+        <p>Remplacez le lien ci-dessous par l'invitation Discord de votre serveur de démo.</p>
+        <a class="btn btn--large" href="#" rel="noopener noreferrer">Ouvrir Discord — InnoBot</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page du site -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>InnoTech Solutions</strong> — Projet ELIZA · assistant internes (faa).</p>
+    </div>
+  </footer>
+</body>
+</html>
