@@ -2,13 +2,13 @@
 
 /* Variables globales : couleurs, typo, rayon, largeur max du contenu */
 :root {
-  --bg: #0f1419;
+  --bg: #110f11;
   --bg-elevated: #1a222c;
   --text: #e8eef4;
   --text-muted: #9aa8b4;
-  --accent: #3d9cf0;
-  --accent-dim: #2563a8;
-  --border: rgba(255, 255, 255, 0.08);
+  --accent: #5345a1;
+  --accent-dim:  #5345a1;
+  --border: rgba(255, 255, 255, 0.199);
   --r: 12px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
   --max: 1100px;
@@ -84,7 +84,7 @@ body {
   border-radius: var(--r);
   transition: background 0.15s;
 }
-.btn:hover { background: #5aadff; }
+.btn:hover { background: #4833c1; }
 
 .btn--ghost {
   background: transparent;
@@ -147,7 +147,7 @@ body {
 .mock-chat {
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: var(--r);
+  border-radius: 12px;
   background: var(--bg-elevated);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
@@ -234,20 +234,30 @@ body {
 
 .feature-grid li,
 .kpi {
-  padding: 1.25rem;
+  padding: 2rem;
   border: 1px solid var(--border);
-  border-radius: var(--r);
+  border-radius: 100%;
   background: var(--bg-elevated);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+.feature-grid li:hover,
+.kpi:hover {
+  border-color: rgba(83, 69, 161, 0.6);
 }
 
 .feature-grid h3 {
   margin: 0 0 0.5rem;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 
 .feature-grid p {
-  margin: 0;
-  font-size: 0.92rem;
+  margin: 1;
+  font-size: 1rem;
   color: var(--text-muted);
 }
 
@@ -266,7 +276,22 @@ body {
   margin-bottom: 0.35rem;
   font-size: 1.5rem;
   color: var(--accent);
+   aspect-ratio: 12 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
+
+.feature-grid li:hover,
+.kpi:hover {
+  transform: translateY(-6px);
+  border-color: rgba(83, 69, 161, 0.6);
+  box-shadow: 0 0 20px rgba(83, 69, 161, 0.25);
+}
+
 
 .kpi span {
   font-size: 0.88rem;
