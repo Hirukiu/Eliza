@@ -2,6 +2,7 @@ import asyncio
 import os
 import re
 import sys
+
 import discord
 import ollama
 from dotenv import load_dotenv
@@ -16,10 +17,10 @@ OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 ollama_client = ollama.AsyncClient(host=OLLAMA_BASE_URL)
 
-#Safety guardrails 
+# Safety guardrails
 
 CRISIS_PATTERNS = [
-    r"\bsuicid",              # suicide
+    r"\bsuicid",
     r"me\s+tuer",
     r"m['e]\s*tuer",
     r"envie\s+de\s+mourir",
@@ -109,7 +110,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    # Filet de sécurité 
     if _CRISIS_RE.search(message.content):
         await message.channel.send(CRISIS_RESPONSE)
         return
