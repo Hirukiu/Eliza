@@ -12,12 +12,7 @@
 2. [Cibles et Besoin](#cibles-et-besoin)
 3. [Fonctionnalités Techniques](#fonctionnalités-techniques)
 4. [Modèle Économique](#modèle-économique)
-    * [Retour sur Investissement (ROI)](#retour-sur-investissement-roi)
-    * [Performance Indicators (KPIs)](#performance-indicators-kpis)
 5. [Étude d'Impact Éthique et Responsabilité](#étude-dimpact-éthique-et-responsabilité)
-    * [Transparence et Effet ELIZA](#transparence-et-effet-eliza)
-    * [Confidentialité et Données](#confidentialité-et-données)
-    * [Gestion du Mal-être au Travail](#gestion-du-mal-être-au-travail)
 6. [Bibliographie et Sources](#bibliographie-et-sources-de-létude)
 
 ---
@@ -46,11 +41,17 @@ Le projet Eliza
 
 ## Fonctionnalités Techniques
 
-[explication du fonctionnement du chatbot]
+Eliza repose sur une architecture en trois couches. Lorsqu'un employé pose une question sur Discord, le bot analyse d'abord le message pour détecter l'intention : si la question porte sur la météo, les transports, les jours fériés ou une recherche web, il interroge l'API externe correspondante. Sinon, il utilise le système RAG (Retrieval Augmented Generation) : il recherche dans la base documentaire interne les passages les plus pertinents, puis les transmet à Ollama pour générer une réponse contextualisée.
 
-* **Interface utilisateur :** Le chatbot sera déployé sur Discord afin de s'intégrer naturellement aux outils de travail existants.
-* **Moteur d'IA :** Les réponses sont générées par Ollama, ajusté pour adopter un ton professionnel et bienveillant.
-* **Les API :** 
+* **Interface utilisateur :** Le chatbot est déployé sur Discord afin de s'intégrer naturellement aux outils de travail existants.
+* **Moteur d'IA :** Les réponses sont générées par Ollama (modèle `phi3:mini`), qui tourne entièrement en local, sans dépendance à un service cloud externe.
+* **Système RAG :** Les documents internes (FAQ RH, règles d'entreprise) sont indexés dans ChromaDB sous forme de vecteurs. À chaque question, les passages les plus proches sémantiquement sont extraits et fournis au modèle comme contexte.
+* **Les API externes :**
+    * `date.nager.at` — jours fériés français
+    * `wttr.in` — météo en temps réel par ville
+    * `ressources.data.sncf.com` — informations sur les gares et trajets SNCF
+    * `DuckDuckGo Search` — recherche web générale
+* **Protocole de crise :** Si un message contient des mots liés à la détresse psychologique, le bot suspend toute logique de réponse normale et redirige immédiatement vers les contacts humains appropriés.
     
 
 
@@ -77,16 +78,16 @@ Pour mesurer le succès de notre solution, nous suivrons les indicateurs suivant
 
 ## Étude d'Impact Éthique et Responsabilité
 
-l'effet ELIZA est le fait de prendre un chatbot pour un 
+L'effet ELIZA désigne la tendance des utilisateurs à projeter des traits humains sur un programme informatique — à lui attribuer une compréhension, des émotions, voire une personnalité — alors qu'il ne fait que simuler une conversation. Ce biais cognitif, identifié dès 1966 par Joseph Weizenbaum, représente un risque réel : un utilisateur peut développer une relation de confiance ou de dépendance envers un outil qui n'a aucune conscience ni intention réelle.
 
 ### Transparence et Effet ELIZA
 * Pour éviter toute confusion quant à la nature du chatbot, l'interface rappellera clairement qu'il s'agit d'une intelligence artificielle. Il n'a pas vocation à simuler des émotions humaines ou à remplacer le lien social.
 
 ### Confidentialité et Données
-* Les requêtes des employés seront [anonymisées / traitées de manière sécurisée] et ne seront pas utilisées pour entraîner des modèles externes. 
+* Les requêtes des employés ne sont pas stockées de manière permanente et ne sont pas utilisées pour entraîner des modèles externes. Le modèle Ollama tourne entièrement en local, ce qui garantit qu'aucune donnée ne quitte l'infrastructure de l'entreprise.
 
 ### Gestion du Mal-être au Travail
-* **Protocole d'urgence :** Si l'IA détecte des termes liés à la détresse psychologique (ex: "burn-out", "harcèlement", "dépression"), elle suspendra sa logique de résolution de problème.
+* **Protocole d'urgence :** Si l'IA détecte des termes liés à la détresse psychologique , elle suspendra sa logique de résolution de problème.
 * **Action :** Le chatbot répondra avec une formulation neutre et empathique et fournira immédiatement les contacts humains appropriés (médecine du travail, numéro d'urgence RH, représentants du personnel).
 
 ---
@@ -96,13 +97,16 @@ l'effet ELIZA est le fait de prendre un chatbot pour un
 
 **Données financières et KPIs (Support IT / RH) :**
 
-* **Help Desk Institute & MetricNet :** *Metric of the Month: Cost per Ticket* et *Mean Time to Resolve*. Benchmarks mondiaux sur le coût de traitement et le temps de résolution des tickets internes.
+* **Help Desk Institute (HDI) & MetricNet :** *Metric of the Month: Cost per Ticket* et *Mean Time to Resolve*. Benchmarks mondiaux sur le coût de traitement et le temps de résolution des tickets internes.
 * **Zendesk :** *Support Benchmarks - AI and Ticket Deflection Best Practices*. Études sur l'impact de l'intelligence artificielle sur le taux de déflexion et la satisfaction collaborateur.
 
 **Ressources Techniques et APIs (Open Data) :**
-* **Navitia.io :** Portail Open Data de la mobilité, utilisé pour l'agrégation des données de transports en commun en temps réel.
-* **OpenStreetMap (via l'API Overpass) :** Base de données cartographique libre et collaborative, utilisée pour la géolocalisation des infrastructures de restauration locales.
-* **Nager.Date :** API Open Source publique recensant le calendrier officiel des jours fériés mondiaux.
+* **Nager.Date (`date.nager.at`) :** API Open Source publique recensant le calendrier officiel des jours fériés mondiaux. Utilisée pour répondre aux questions sur les jours fériés français. Aucune clé API requise.
+* **wttr.in :** Service météorologique open source fournissant les données climatiques en temps réel (température, ressenti, humidité, description). Utilisée pour répondre aux questions météo par ville. Aucune clé API requise.
+* **DuckDuckGo Search (`duckduckgo-search`) :** Bibliothèque Python permettant d'effectuer des recherches web via le moteur DuckDuckGo sans clé API. Utilisée pour les questions générales nécessitant une recherche sur internet.
+* **SNCF Open Data (`ressources.data.sncf.com`) :** Portail Open Data de la SNCF fournissant les informations sur les gares et les trajets TGV Max. Utilisée pour répondre aux questions de transport ferroviaire. Aucune clé API requise.
+* **ChromaDB :** Base de données vectorielle open source utilisée pour le stockage et la recherche des documents RH (système RAG).
+* **Ollama (`phi3:mini`) :** Moteur d'inférence local permettant de faire tourner des modèles de langage en local. Utilisé pour générer les réponses du chatbot sans dépendance à un service cloud.
 
 **Éthique et Psychologie :**
 * **Weizenbaum, Joseph (1966) :** Travaux fondateurs sur le programme *ELIZA* et le biais psychologique d'anthropomorphisme appliqué aux machines.
