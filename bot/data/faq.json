@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Comment poser des congés ?",
+    "answer": "Les demandes de congés se font via l'outil RH Workday, rubrique 'Mes absences'. Le délai de prévenance est de 2 semaines minimum. Votre manager doit valider la demande sous 5 jours ouvrés."
+  },
+  {
+    "question": "Combien de jours de congés ai-je par an ?",
+    "answer": "Vous disposez de 25 jours de congés payés par an, auxquels s'ajoutent les RTT selon votre contrat. Le solde est consultable sur Workday."
+  },
+  {
+    "question": "Comment déclarer un arrêt maladie ?",
+    "answer": "En cas d'arrêt maladie, prévenez votre manager le jour même par téléphone ou email. Transmettez le volet employeur de votre arrêt à la RH dans les 48h via email rh@entreprise.fr."
+  },
+  {
+    "question": "Comment obtenir une attestation employeur ?",
+    "answer": "Les attestations employeur sont disponibles en téléchargement direct sur Workday, rubrique 'Mes documents'. En cas de problème, contactez la RH à rh@entreprise.fr."
+  },
+  {
+    "question": "Comment fonctionne le télétravail ?",
+    "answer": "Le télétravail est autorisé jusqu'à 2 jours par semaine selon accord avec votre manager. La demande se fait sur Workday. Le matériel nécessaire est fourni par l'entreprise."
+  },
+  {
+    "question": "Comment contacter le service RH ?",
+    "answer": "Le service RH est joignable par email à rh@entreprise.fr, par téléphone au 01 23 45 67 89, ou en présentiel au bureau 204 du bâtiment A, du lundi au vendredi de 9h à 17h."
+  },
+  {
+    "question": "Comment ouvrir un ticket informatique ?",
+    "answer": "Les tickets IT se créent sur le portail ServiceDesk à l'adresse it.entreprise.fr. Pour les urgences, appelez le support au 01 23 45 67 00. Temps de réponse standard : 24h ouvrées."
+  },
+  {
+    "question": "Comment me connecter au WiFi de l'entreprise ?",
+    "answer": "Connectez-vous au réseau CORP-INTERNAL avec vos identifiants Active Directory. Pour les visiteurs, le réseau CORP-GUEST est disponible, mot de passe disponible à l'accueil."
+  },
+  {
+    "question": "Comment réinitialiser mon mot de passe ?",
+    "answer": "Rendez-vous sur password.entreprise.fr et suivez la procédure de réinitialisation. Si vous êtes bloqué, contactez le support IT au 01 23 45 67 00 avec votre badge employé."
+  },
+  {
+    "question": "Comment accéder à mes outils à distance ?",
+    "answer": "L'accès distant se fait via le VPN Cisco AnyConnect, téléchargeable sur it.entreprise.fr. Vos identifiants sont les mêmes que votre session Windows. En cas de problème, ouvrez un ticket IT."
+  },
+  {
+    "question": "Comment demander un nouveau matériel informatique ?",
+    "answer": "Les demandes de matériel se font via le portail ServiceDesk, catégorie 'Matériel'. La demande doit être validée par votre manager. Délai de traitement : 5 à 10 jours ouvrés."
+  },
+  {
+    "question": "Comment signaler un incident de sécurité informatique ?",
+    "answer": "Tout incident de sécurité (phishing, virus, accès suspect) doit être signalé immédiatement à securite@entreprise.fr et au support IT au 01 23 45 67 00. Ne pas éteindre la machine avant l'intervention."
+  },
+  {
+    "question": "Comment accéder à mes fiches de paie ?",
+    "answer": "Vos fiches de paie sont disponibles sur Workday, rubrique 'Mes documents > Paie'. Les fiches sont disponibles le dernier jour ouvré du mois. Conservez-les, elles ne sont pas archivées indéfiniment."
+  },
+  {
+    "question": "Comment déclarer une note de frais ?",
+    "answer": "Les notes de frais se saisissent sur Workday, rubrique 'Mes frais'. Joignez les justificatifs en PDF. Le remboursement est effectué sous 15 jours après validation manager. Plafond repas : 20€."
+  },
+  {
+    "question": "Quelle est la politique de formation ?",
+    "answer": "Chaque employé dispose d'un budget formation annuel de 1500€ et de son CPF. Les demandes se font sur Workday, rubrique 'Ma formation', en accord avec votre manager. Catalogue disponible sur intranet.entreprise.fr."
+  }
+]
