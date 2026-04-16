@@ -1,0 +1,12 @@
+# Variables d'environnement (tokens, mots de passe)
+.env
+
+# Base vectorielle générée automatiquement (recréée avec ingest.py)
+bot/data/vector_store/
+data/vector_store/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
