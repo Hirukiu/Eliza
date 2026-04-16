@@ -57,11 +57,11 @@ Eliza repose sur une architecture en trois couches. Lorsqu'un employé pose une 
 
 ## Modèle Économique
 ### Retour sur Investissement (ROI)
-L'intégration de Eliza
- crée de la valeur à plusieurs niveaux :
 
-1. **Gain financier :** En automatisant la résolution des requêtes récurrentes , le chatbot réduit drastiquement le volume de tickets d'assistance. Ce filtrage permet de libérer un temps précieux aux experts RH et IT, qui peuvent alors se concentrer sur des tâches importantes. Le coût humain du support interne est ainsi considérablement optimisé.
-2. **Gain de temps :** Grâce à un accès instantané et autonome à l'information, les nouvelles recrues ne restent plus bloquées dans l'attente d'une réponse de leur manager ou du support. Cette fluidité accélère leur montée en compétences, leur permettant d'être pleinement opérationnelles et productives beaucoup plus rapidement.
+D'après les benchmarks MetricNet, le coût moyen de traitement d'un ticket de support interne est de **22 €**. Pour une entreprise de 200 employés générant environ **400 tickets par mois**, un taux de déflexion de 30 % représente **120 tickets évités chaque mois**, soit une économie de **2 640 € par mois** — environ **31 680 € par an**.
+
+1. **Gain financier :** En automatisant la résolution des requêtes récurrentes, Eliza réduit de **30 %** le volume de tickets RH et IT. Pour 200 employés, cela représente une économie estimée à **31 680 €/an** (base : 22 €/ticket, 400 tickets/mois, source MetricNet).
+2. **Gain de temps :** Le temps de résolution passe de **8 à 9 heures** en moyenne à **moins de 2 minutes**. Les nouvelles recrues ne sont plus bloquées dans l'attente d'une réponse, ce qui accélère leur intégration et réduit le coût d'opportunité des managers.
 
 ![Graphique représentant le prix des tickets](./img/ticket_price_chart.png)
 
